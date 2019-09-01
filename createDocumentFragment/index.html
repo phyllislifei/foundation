@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<ul>
+
+</ul>
+</body>
+<script>
+    let ul=document.getElementsByTagName('ul')[0];
+	let lis=document.createDocumentFragment();
+	for (let i = 0; i < 10; i++) {
+	    let li=document.createElement('li');
+	    li.innerHTML=i;
+	    lis.appendChild(li);
+	}
+	ul.appendChild(lis);
+</script>
+</html>
